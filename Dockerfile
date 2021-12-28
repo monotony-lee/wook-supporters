@@ -2,7 +2,7 @@ FROM node:16.13.0
 
 ENV PORT 4000
 
-ENV MONGO_URI mongodb://localhost:27017/docker-node-mongo
+ENV MONGO_URI mongodb://localhost:27017/docker-node-mongo?authSource=admin
 
 #ENV MONGO_URL mongodb://mongo-0.mongo:27017
 
@@ -21,4 +21,4 @@ COPY package*.json ./
 COPY ./ .
 
 EXPOSE 4000
-CMD [ "node", "-r esm src" ]
+CMD [ "node", "-r", "esm", "src" ]
