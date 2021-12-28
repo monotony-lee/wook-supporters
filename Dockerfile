@@ -20,5 +20,5 @@ COPY package*.json ./
 # 앱 소스 추가
 COPY ./ .
 
-EXPOSE 3000
-CMD [ "node", "app.js" ]
+EXPOSE 4000
+CMD [ "node", "-r esm src" ]
