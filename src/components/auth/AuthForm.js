@@ -78,7 +78,7 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
         <StyledInput
           autoComplete="username"
           name="username"
-          placeholder="아이디 wook♡"
+          placeholder="아이디 wook♡ / 영문 6자 이하로 부탁드립니다!!"
           onChange={onChange}
           value={form.username}
         />
