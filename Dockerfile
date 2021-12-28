@@ -2,7 +2,7 @@ FROM node:16.13.0
 
 ENV PORT 4000
 
-ENV MONGO_URI mongodb://localhost:27017/docker-node-mongo?authSource=admin
+ENV MONGO_URI mongodb://localhost:27017/blog
 
 #ENV MONGO_URL mongodb://mongo-0.mongo:27017
 
