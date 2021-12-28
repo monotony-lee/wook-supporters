@@ -9,6 +9,8 @@ const PaginationBlock = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 `;
 const PageNumber = styled.div``;
 

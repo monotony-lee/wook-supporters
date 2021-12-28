@@ -7,10 +7,10 @@ import Tags from '../common/Tags';
 import { Helmet } from 'react-helmet-async';
 
 const PostViewerBlock = styled(Responsive)`
-  margin-top: 4rem;
+  margin-top: 3rem;
 `;
 const PostHead = styled.div`
-  border-bottom: 1px solid ${palette.gray[2]};
+  border-bottom: 1.5px solid ${palette.gray[4]};
   padding-bottom: 3rem;
   margin-bottom: 3rem;
   h1 {
@@ -18,11 +18,13 @@ const PostHead = styled.div`
     line-height: 1.5;
     margin: 0;
   }
+  padding-top: 1rem;
 `;
 
 const PostContent = styled.div`
   font-size: 1.3125rem;
   color: ${palette.gray[8]};
+  height: 80vh;
 `;
 
 const PostViewer = ({ post, error, loading, actionButtons, ownPost }) => {

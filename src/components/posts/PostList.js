@@ -9,23 +9,33 @@ import { Link } from 'react-router-dom';
 
 const PostListBlock = styled(Responsive)`
   margin-top: 3rem;
+  /* background: #f2f2f2; */
+  /* z-index: 10; */
 `;
 
 const WritePostButtonWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const PostItemBlock = styled.div`
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  box-shadow: 7px 4px 9px 3px rgba(181, 181, 181, 0.32);
+  /* z-index: 10; */
+
+  /* margin-bottom: 1rem; */
+  /* background: #e7f3f1; */
+  /* border-radius: 20px; */
+
   /* 맨 위 포스트는 padding-top 없음 */
   &:first-child {
-    padding-top: 0;
+    /* padding-top: 0; */
   }
   & + & {
-    border-top: 1px solid ${palette.gray[2]};
+    border-top: 0.5px solid ${palette.gray[3]};
   }
 
   h2 {
@@ -69,7 +79,7 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
     <PostListBlock>
       <WritePostButtonWrapper>
         {showWriteButton && (
-          <Button cyan to="/write">
+          <Button style={{ marginTop: 20 }} cyan to="/write">
             새 글 작성하기
           </Button>
         )}

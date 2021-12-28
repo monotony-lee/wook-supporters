@@ -18,6 +18,7 @@ const TitleInput = styled.input`
   border-bottom: 1px solid ${palette.gray[4]};
   margin-bottom: 2rem;
   width: 100%;
+  /* background: #E7F3F1; */
 `;
 const QuillWrapper = styled.div`
   /* 최소 크기 지정 및 padding 제거 */
